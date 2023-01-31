@@ -44,8 +44,29 @@
 }
 .name{
   display: flex;
+  flex-flow: column;
+  align-items: center;
   margin: 0 auto;
   font-size: 50px;
   color: white;
-
+}
+.name h1{
+  margin-bottom: 0;
+}
+.home-info{
+  display:flex;
+  width: 75%;
+  margin: 0 auto;
+  justify-content: space-between;
+  background-color: yellow;
+}
+.info-text{
+  display: flex;
+  flex-flow: column;
+  background-color: antiquewhite;
+  width: 50%;
+  margin:2vh 0;
+}
+.info-text h3{
+  margin: 2vh auto 0 auto;
 }
