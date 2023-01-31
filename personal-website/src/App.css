@@ -1,39 +1,19 @@
 .header-cont{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   margin: 10px auto;
 }
-.left-head{
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 5%;
-  width:50%;
-}
-.left-head p{
+.header-txt{
   color:white;
-  text-shadow: white 1px 1px 5pxs;
-  margin-right: 10px;
-  font-size: 20px;
 }
-.left-head p:hover{
-  color:rgb(36, 189, 195);
-  cursor:pointer;
-}
-.right-head{
+.meat{
   display: flex;
-  justify-content: flex-end;
-  width: 50%;
-  margin-right: 5%;
-}
-.right-head p{
-  color: white;
-  text-shadow: white 1px 1px 5px;
-  font-size: 20px;
-}
-.right-head p:hover{
-  color:rgb(36, 189, 195);
-  cursor:pointer;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width:75%;
 }
 /* Homepage Title */
 .homepage-title{
@@ -55,18 +35,42 @@
 }
 .home-info{
   display:flex;
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   justify-content: space-between;
-  background-color: yellow;
 }
 .info-text{
   display: flex;
   flex-flow: column;
-  background-color: antiquewhite;
   width: 50%;
-  margin:2vh 0;
+  margin:4vh 0;
 }
-.info-text h3{
-  margin: 2vh auto 0 auto;
+.info-text p{
+  margin-left: 2vh;
+}
+.info-img{
+  display:flex;
+  width:50%;
+  justify-content: center;
+  align-items: center;
+}
+/* projects */
+.projects{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.project-img{
+  display: flex;
+  background-color: red;
+  width:100%;
+}
+.spec-img{
+  width:100%;
+}
+/* skills */
+.skills{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
