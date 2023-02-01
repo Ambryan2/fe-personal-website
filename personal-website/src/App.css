@@ -59,6 +59,7 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+  width: 100%;
 }
 .project-img{
   display: flex;
@@ -71,6 +72,40 @@
 /* skills */
 .skills{
   display: flex;
+  flex-flow: wrap;
   justify-content: space-around;
   width: 100%;
+}
+.skill{
+  display: flex;
+  flex-flow: column wrap;
+  width: 20%;
+  align-items: center;
+  border: 2px black solid;
+  border-radius: 1em;
+  padding: 1vh;
+}
+.rating{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.circle{
+  border: 1px black solid;
+  border-radius: 3em;
+  height: 2vh;
+  width: 2vh;
+  margin-right: 1.5vh;
+}
+.black{
+  background-color: black;
+}
+/* learning */
+.learning{
+  width: 100%;
+}
+/* Slider */
+.slider{
+  display: flex;
+  justify-content: space-between;
 }

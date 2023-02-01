@@ -1,5 +1,9 @@
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { NeoSelf } from './Neoself';
+import { Ecards } from './E-cards';
+import { Habit } from './Habit';
+import { Miscellaneous } from './Misc';
 
 export const Projects = () => {
 
@@ -9,42 +13,36 @@ export const Projects = () => {
 >
     <VerticalTimelineElement
         // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-        date="NeoSelf"
+        date="Dec 2022-Jan 2023"
         iconStyle={{ background: 'black', color: '#fff' }}
     >
-        <div className='project-img'>
-            <img className='spec-img' alt="iron-man" src='https://gh.cdn.sewest.net/assets/ident/news/d81c6286/Avenger_Blog_IronMan_Imagery5-q4grmvi70.jpg?quality=65'/>
-        </div>
+
+        <NeoSelf />
+
     </VerticalTimelineElement>
     <VerticalTimelineElement
-        date="Social E-cards"
+        date="Nov 2022"
         iconStyle={{ background: 'black', color: '#fff' }}
     >
-        <h3 className="vertical-timeline-element-title">Art Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-        <p>
-        Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-        </p>
+
+        <Ecards />
+
     </VerticalTimelineElement>
     <VerticalTimelineElement
-        date="Django Library"
+        date="Nov 2022"
         iconStyle={{ background: 'black', color: '#fff' }}
     >
-        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-        <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-        <p>
-        User Experience, Visual Design
-        </p>
+        
+        <Habit />
+
     </VerticalTimelineElement>
     <VerticalTimelineElement
-        date="Miscellaneous"
+        date="Sept - Nov 2022"
         iconStyle={{ background: 'black', color: '#fff' }}
     >
-        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-        <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-        <p>
-        User Experience, Visual Design
-        </p>
+        
+    <Miscellaneous />
+
     </VerticalTimelineElement>
     
 </VerticalTimeline>

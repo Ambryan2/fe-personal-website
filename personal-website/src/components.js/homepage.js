@@ -26,25 +26,53 @@ export const HomePage = () => {
                 <h2>Skills</h2>
                 <div className="skills">
                     <div className="skill">
-                        <p>Javascript</p>
+                        <h3>Javascript</h3>
+                        <p>React</p>
+                        <p>OOP</p>
+                        <div className="rating">
+                            <p>Rating: </p>
+                            <p className="circle black"></p>
+                            <p className="circle black"></p>
+                            <p className="circle black"></p>
+                            <p className="circle black"></p>
+                            <p className="circle"></p>
+                        </div>
+                        
                     </div>
                     <div className="skill">
-                        <p>Python</p>
+                        <h3>Python</h3>
+                        <p>Django</p>
+                        <p>OOP</p>
+                        <div className="rating">
+                            <p>Rating: </p>
+                            <p className="circle black"></p>
+                            <p className="circle black"></p>
+                            <p className="circle black"></p>
+                            <p className="circle black"></p>
+                            <p className="circle"></p>
+                        </div>
+                    </div>
+                    <div className="skill">
+                        <h3>Other</h3>
+                        <p>Html</p>
+                        <p>CSS</p>
+                        <p>Git</p>
+                        <p>PostgreSql</p>
+                        <p>Agile</p>
                     </div>
                 </div>
                 <div className="learning">
-                        <h3>What I am Learning</h3>
-                        
+                        <h2>What I am Learning</h2>
                         <p>Hello my name is angelo </p>
                 </div>
-                <div className="projects">
-                    <h2>Projects</h2>
-                    <p>Newest to oldest</p>
-                    <Projects />
-                </div>
-                <div>
-                    <h2>Contact Me</h2>
-                </div>
+            </div>
+            <div className="projects">
+                <h2>Projects</h2>
+                <p>Newest to oldest</p>
+                <Projects />
+            </div>
+            <div>
+                <h2>Contact Me</h2>
             </div>
         </div>
     )
