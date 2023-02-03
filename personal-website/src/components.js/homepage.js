@@ -15,7 +15,6 @@ export const HomePage = () => {
                             <h2 className="ttl">Hola! 👋</h2>
                             <p>My name is Angelo Bryan. I am 22 years old. In 2022 after completing an apprenticeship for Digital Marketing I decided that Software Development is where my true passion is!  I have experience with Django and React and can't wait to learn more!</p>
                             <Resume />
-                            {/* <button href="AngelosResume.pdf" download>Download Resume</button> */}
                         </div>
                         <div className="info-img">
                             <img className="waterfall" alt="Me next to waterfall" src="waterfall.png" />
@@ -24,7 +23,7 @@ export const HomePage = () => {
                 </div>
             </div>
                     <div className="center">
-                        <h2 className="white">Skills</h2>
+                        <h2 className="white header-style">Skills</h2>
                     </div>
                     <div className="skills">
                         <div className="skill">
@@ -89,7 +88,7 @@ export const HomePage = () => {
                 </div>
             </div>
                 <div className="contact">
-                    <h2 className="white">Contact Me</h2>
+                    <h2 className="white header-style">Contact Me</h2>
                     <EmailForm />
                 </div>
     </div>

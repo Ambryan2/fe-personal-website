@@ -2,6 +2,9 @@
 .background{
   background-color: white;
 }
+.header-style{
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
 /* particles */
 .header-cont{
   display: flex;
@@ -59,15 +62,17 @@ h2{
 }
 .home-info{
   display:flex;
-  flex-flow: wrap;
+  flex-flow:row wrap;
   width: 100%;
-  margin: 2vh auto;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 .info-text{
   display: flex;
   flex-flow: column;
-  width: 50%;
+  justify-content: center;
+  align-content: center;
+  width: 60%;
   margin:4vh 0;
 }
 .info-text p{
@@ -75,10 +80,11 @@ h2{
 }
 .info-img{
   display:flex;
-  width:50%;
+  width:20em;
   height: 30em;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  margin: 2vh 0;
 }
 .waterfall{
   height:100%;
