@@ -8,6 +8,7 @@ export const EmailForm = () => {
         message: '',
         reply_to: '',
       });
+    const [step, setStep] = useState(0)
     
       const onSubmit = (e) => {
         e.preventDefault();
@@ -18,9 +19,11 @@ export const EmailForm = () => {
             'MpaDmxo4xT9at4STW'
           )
             .then((response) => {
+                setStep(1)
               console.log('SUCCESS!', response.status, response.text);
             })
             .catch((err) => {
+                setStep(2)
               console.log('FAILED...', err);
             });
         };
@@ -28,6 +31,17 @@ export const EmailForm = () => {
       const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
       };
+    
+    function renderStep(step){
+        const formSteps = [
+            <></>,
+            <center>
+                <p className='white'>Thank you for messaging me!</p>
+            </center>
+            
+        ]
+        return step<formSteps.length ? formSteps[step] : null;
+    }
     
     return(
         <div className="email">
@@ -63,6 +77,7 @@ export const EmailForm = () => {
                 </div>
                 <button className='email-submit' type='submit'>Submit</button>
             </form>
+            {renderStep(step)}
         </div>
     )
 }
