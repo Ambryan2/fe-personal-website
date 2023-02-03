@@ -1,26 +1,35 @@
+/* this blocks particles */
+.background{
+  background-color: white;
+}
+/* particles */
 .header-cont{
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 10px auto;
+  margin: 0px auto;
 }
 .header-txt{
   color:white;
 }
 .meat{
   display: flex;
+  background-color: white;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   width:75%;
 }
+/* Universal */
+h2{
+  font-size: 30px;
+}
 /* Homepage Title */
 .homepage-title{
   display: flex;
   flex-flow: column;
-  height: 40em;
-  background-image: url(cool-background.png);
+  height: 40em; 
 }
 .name{
   display: flex;
@@ -28,7 +37,7 @@
   align-items: center;
   margin: 0 auto;
   font-size: 50px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .name h1{
   margin-bottom: 0;
@@ -79,11 +88,12 @@
 .skill{
   display: flex;
   flex-flow: column wrap;
-  width: 20%;
+  width: 15em;
   align-items: center;
   border: 2px black solid;
   border-radius: 1em;
   padding: 1vh;
+  margin-bottom: 2vh;
 }
 .rating{
   display: flex;
@@ -107,5 +117,95 @@
 /* Slider */
 .slider{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  margin-bottom: 1vh;
+}
+/* display projects */
+.display{
+  display:flex;
+  width: 100%;
+}
+.display-img{
+  width: 100%;
+}
+.arrow:hover{
+  color: rgb(47, 172, 194);
+  cursor: e-resize;
+}
+.arrow-icon{
+  height: 4vh;
+}
+.arrow-icon:hover{
+  color:rgb(47, 172, 194);
+  cursor: e-resize;
+}
+.no-margin{
+  margin-bottom: -20px;
+}
+.desc{
+  display: flex;
+  flex-flow: column;
+}
+.bottom {
+  margin: 0;
+  align-items: center;
+}
+/* contact */
+.contact{
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+/* Email Form */
+.email{
+  /* border:3px rgba(0, 0, 0, 0.24) solid; */
+  padding: 2vh;
+  border-radius: 1em;
+  margin-bottom: 10vh;
+  width: 80%;
+}
+.email-form{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.info{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.email-input{
+  margin: 0 1vh 2vh 1vh;
+  border-radius: 2em;
+  height:3vh;
+  padding-left: 5px;
+  width: 25%;
+}
+.email-submit{
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 1em;
+  height: 4vh;
+  width: 50%;
+  font-size: 20px;
+}
+.email-submit:hover{
+  border:2px solid black;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.comment{
+  resize:none;
+  width: 100%;
+  font-family:"Times New Roman", Times, serif;  
+  margin-bottom: 2vh;
+  padding: 1vh;
+  border-radius: .75em;
+}
+.comment-a{
+  display: flex;
+  justify-content: center;
+  width: 55%;
 }

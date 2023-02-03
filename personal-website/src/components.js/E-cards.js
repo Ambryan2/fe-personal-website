@@ -1,40 +1,39 @@
 import { useState } from 'react'
+import { ArrowRightShort } from '@styled-icons/bootstrap/ArrowRightShort'
 
 export const Ecards = () => {
     const [step, setStep] = useState(0)
 
     function renderStep(step){
         const formSteps = [
-            <>
-                <h3>Back End Developer</h3>
-                <h4>Project: Ecards</h4>
-                <p>
-                Django, Git, Agile, Python, Djoser
-                </p>
-            </>
+            <div className='desc'>
+                <div className='no-margin'>
+                    <h3>Project: Ecards</h3>
+                    <h4>Back End Developer</h4>
+                </div>
+                <p>Description: Card app that allows users to make their own cards</p>
+                <p>Skills: Django, Git, Agile, Python, Djoser</p>
+                <ArrowRightShort className='arrow-icon' onClick={next} />
+            </div>
             ,
-            <>
-            <h1>Homepage</h1>
-            </>
+            <div className='display'>
+                <img className='display-img arrow' onClick={next} alt="homepage" src="Projects/ECards/main.png" />
+            </div>    
             ,
-            <>
-            <h1>questionnaire</h1>
-            </>
+            <div className='display'>
+                <img className='display-img arrow' onClick={next} alt="dashboard" src="Projects/ECards/new.png" />
+            </div>    
             ,
-            <>
-            <h1>Habit page</h1>
-            </>
-            ,
-            <>
-            <h1>Friends</h1>
-            </>
+            <div className='display'>
+                <img className='display-img arrow' onClick={next} alt="dashboard" src="Projects/ECards/mine.png" />
+            </div>
         ];
     
         return step<formSteps.length ? formSteps[step] : null;
     }
     const next = (event) => {
         event.preventDefault()
-        if (step>3){
+        if (step>2){
             setStep(0)
         }
         else{
@@ -42,24 +41,10 @@ export const Ecards = () => {
         }
         
     }
-    const prev = (event) => {
-        event.preventDefault()
-        if (step === 0){
-            setStep(4)
-        }
-        else{
-            setStep(step-1)
-        }
-        
-    }
-
 
     return(
         <div>
-            <div className='slider'>
-                <button onClick={prev}>Prev</button>
-                <button onClick={next}>Next</button>
-            </div>
+
             {renderStep(step)}
             
         </div>
