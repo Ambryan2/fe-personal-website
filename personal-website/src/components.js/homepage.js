@@ -30,28 +30,14 @@ export const HomePage = () => {
                             <h3>Javascript</h3>
                             <p>React</p>
                             <p>OOP</p>
-                            <div className="rating">
-                                <p>Rating: </p>
-                                <p className="circle black"></p>
-                                <p className="circle black"></p>
-                                <p className="circle black"></p>
-                                <p className="circle black"></p>
-                                <p className="circle"></p>
-                            </div>
+                            <p>DOM Manipulation</p>
+                            <p>Node (Beginner)</p>
                             
                         </div>
                         <div className="skill">
                             <h3>Python</h3>
                             <p>Django</p>
                             <p>OOP</p>
-                            <div className="rating">
-                                <p>Rating: </p>
-                                <p className="circle black"></p>
-                                <p className="circle black"></p>
-                                <p className="circle black"></p>
-                                <p className="circle black"></p>
-                                <p className="circle"></p>
-                            </div>
                         </div>
                         <div className="skill">
                             <h3>Other</h3>

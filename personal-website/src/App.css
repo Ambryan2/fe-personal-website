@@ -124,18 +124,6 @@ h2{
   padding: 1vh;
   margin-bottom: 2vh;
 }
-.rating{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.circle{
-  border: 1px black solid;
-  border-radius: 3em;
-  height: 2vh;
-  width: 2vh;
-  margin-right: 1.5vh;
-}
 .black{
   background-color: black;
 }

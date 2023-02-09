@@ -139,8 +139,8 @@ export const ParticlesBackground = () => {
                 }
                 ,
                 number: {
-                    limit: 300,
-                    value: 110
+                    limit: 100,
+                    value: 50
                   }
                 ,
                 links: {
