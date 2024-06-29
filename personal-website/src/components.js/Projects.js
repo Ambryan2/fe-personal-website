@@ -1,9 +1,9 @@
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { NeoSelf } from './Neoself';
-import { Ecards } from './E-cards';
-import { Habit } from './Habit';
-import { Miscellaneous } from './Misc';
+import { NeoSelf } from './Neoself.js';
+import { Ecards } from './E-cards.js';
+import { Habit } from './Habit.js';
+import { Miscellaneous } from './Misc.js';
 
 export const Projects = () => {
 

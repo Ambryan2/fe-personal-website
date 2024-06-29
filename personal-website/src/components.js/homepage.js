@@ -1,7 +1,7 @@
-import { Main } from "./main"
-import { Projects } from "./Projects"
-import { EmailForm } from "./email"
-import { Resume } from "./resume"
+import { Main } from "./main.js"
+import { Projects } from "./Projects.js"
+import { EmailForm } from "./email.js"
+import { Resume } from "./resume.js"
 
 export const HomePage = () => {
 

@@ -1,13 +1,13 @@
-
+import React from 'react'
 import './App.css';
-import { HomePage } from './components.js/homepage';
-import { ParticlesBackground } from './components.js/particles';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <HomePage />
-      <ParticlesBackground />
+    <div className="App" >
+      <div style={{backgroundColor: 'red', height: 300, width: 400}}/>
+      <h1>Hello </h1>
     </div>
   );
 }
