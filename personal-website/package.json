@@ -4,6 +4,8 @@
   "private": true,
   "main": "./src/index.js",
   "dependencies": {
+    "@react-three/drei": "^9.108.1",
+    "@react-three/fiber": "^8.16.8",
     "@stylexjs/stylex": "^0.7.3",
     "emailjs-com": "^3.2.0",
     "local-storage": "^2.0.0",
@@ -12,7 +14,7 @@
     "react-router-dom": "^6.24.0",
     "react-scripts": "5.0.1",
     "styled-icons": "^10.47.0",
-    "tsparticles": "^2.8.0",
+    "three": "^0.166.1",
     "use-local-storage-state": "^18.1.2"
   },
   "scripts": {
